@@ -16,6 +16,8 @@ def conversation():
 
     audio_file_path = mp3_filename
 
+    api_key=os.getenv("api_key")
+
     transcribed_text = transcribe_audio(api_key, audio_file_path)
     print(transcribed_text)
 
